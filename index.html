@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for animations -->
+</head>
+<body>
+
+    <!-- Dealer Section -->
+    <div class="section dealer">
+        <h1>Dealer's Hand</h1>
+        <div class="cards" id="dealer-cards">
+            <!-- Cards will be added dynamically here -->
+        </div>
+    </div>
+
+    <!-- Player Sections -->
+    <div class="section player">
+        <h1>Player 1</h1>
+        <div class="cards" id="player1-cards">
+            <!-- Cards will be added dynamically here -->
+        </div>
+    </div>
+
+    <div class="section player">
+        <h1>Player 2</h1>
+        <div class="cards" id="player2-cards">
+            <!-- Cards will be added dynamically here -->
+        </div>
+    </div>
+
+    <!-- Button Actions -->
+    <div class="section buttons">
+        <button id="hit" class="game-button">Hit</button>
+        <button id="stand" class="game-button">Stand</button>
+        <button id="double-down" class="game-button">Double Down</button>
+        <button id="split" class="game-button">Split</button>
+    </div>
+
+    <!-- Card Suit Display -->
+    <div class="section card-suits">
+        <div class="card-suit heart">♥ Heart</div>
+        <div class="card-suit spade">♠ Spade</div>
+        <div class="card-suit diamond">♦ Diamond</div>
+        <div class="card-suit club">♣ Club</div>
+    </div>
+
+    <!-- Chips Display -->
+    <div class="section chips">
+        <div class="chip white-chip">50</div>
+        <div class="chip black-chip">100</div>
+        <div class="chip green-chip">150</div>
+    </div>
+
+
+</body>
+</html>
