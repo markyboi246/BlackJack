@@ -2,59 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack Game</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS for animations -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Dealer Section -->
-    <div class="section dealer">
-        <h1>Dealer's Hand</h1>
-        <div class="cards" id="dealer-cards">
-            <!-- Cards will be added dynamically here -->
+    <div class="game-container">
+        <!-- Dealer's Hand -->
+        <div class="hand-container" id="dealer-hand">
+            <h2>Dealer's Hand</h2>
+            <div class="cards">
+                <div class="card spade">
+                    <div class="top-left">K</div>
+                    <div class="suit">♠</div>
+                    <div class="bottom-right">K</div>
+                </div>
+                <div class="card heart">
+                    <div class="top-left">6</div>
+                    <div class="suit">♥</div>
+                    <div class="bottom-right">6</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player 1 -->
+        <div class="hand-container" id="player1-hand">
+            <h2>Player 1</h2>
+            <div class="cards">
+                <div class="card diamond">
+                    <div class="top-left">A</div>
+                    <div class="suit">♦</div>
+                    <div class="bottom-right">A</div>
+                </div>
+                <div class="card club">
+                    <div class="top-left">10</div>
+                    <div class="suit">♣</div>
+                    <div class="bottom-right">10</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="hand-container" id="player2-hand">
+            <h2>Player 2</h2>
+            <div class="cards">
+                <div class="card heart">
+                    <div class="top-left">5</div>
+                    <div class="suit">♥</div>
+                    <div class="bottom-right">5</div>
+                </div>
+                <div class="card spade">
+                    <div class="top-left">7</div>
+                    <div class="suit">♠</div>
+                    <div class="bottom-right">7</div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Player Sections -->
-    <div class="section player">
-        <h1>Player 1</h1>
-        <div class="cards" id="player1-cards">
-            <!-- Cards will be added dynamically here -->
-        </div>
+    <!-- Buttons Section -->
+    <div class="buttons-container">
+        <button class="ActionButton">Hit</button>
+        <button class="ActionButton">Stand</button>
+        <button class="ActionButton">Double Down</button>
+        <button class="ActionButton">Split</button>
     </div>
 
-    <div class="section player">
-        <h1>Player 2</h1>
-        <div class="cards" id="player2-cards">
-            <!-- Cards will be added dynamically here -->
-        </div>
+    <!-- Betting Chips -->
+    <div class="chips-container">
+        <button class="chip">$50</button>
+        <button class="chip">$100</button>
+        <button class="chip">$150</button>
     </div>
-
-    <!-- Button Actions -->
-    <div class="section buttons">
-        <button id="hit" class="game-button">Hit</button>
-        <button id="stand" class="game-button">Stand</button>
-        <button id="double-down" class="game-button">Double Down</button>
-        <button id="split" class="game-button">Split</button>
-    </div>
-
-    <!-- Card Suit Display -->
-    <div class="section card-suits">
-        <div class="card-suit heart">♥ Heart</div>
-        <div class="card-suit spade">♠ Spade</div>
-        <div class="card-suit diamond">♦ Diamond</div>
-        <div class="card-suit club">♣ Club</div>
-    </div>
-
-    <!-- Chips Display -->
-    <div class="section chips">
-        <div class="chip white-chip">50</div>
-        <div class="chip black-chip">100</div>
-        <div class="chip green-chip">150</div>
-    </div>
-
 
 </body>
 </html>

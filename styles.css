@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    background: url('blackjackbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Game Layout */
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.hand-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background: white;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card Styling for Different Suits */
+.heart { color: red; }
+.diamond { color: red; }
+.spade { color: black; }
+.club { color: black; }
+
+/* Card Symbols & Placement */
+.card .top-left, .card .bottom-right {
+    position: absolute;
+    font-size: 14px;
+}
+
+.card .top-left {
+    top: 5px;
+    left: 5px;
+}
+
+.card .bottom-right {
+    bottom: 5px;
+    right: 5px;
+}
+
+.card .suit {
+    font-size: 30px;
+}
+
+/* Buttons */
+.buttons-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ActionButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Betting Chips */
+.chips-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chip {
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid black;
+}
+
+.chip:hover {
+    background-color: orange;
+}
