@@ -4,77 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
 </head>
 <body>
+    <div class="table-container">
+        <!-- Dealer Section -->
+        <div class="dealer">
+            <h2>Dealer</h2>
+            <div id="dealer-cards" class="cards">
+                <img src="cardback.png" class="card-img" alt="Card Back">
+                <img src="cardback.png" class="card-img" alt="Card Back">
+            </div>
+        </div>
 
-    <div class="game-container">
-        <!-- Dealer's Hand -->
-        <div class="hand-container" id="dealer-hand">
-            <h2>Dealer's Hand</h2>
-            <div class="cards">
-                <div class="card spade">
-                    <div class="top-left">K</div>
-                    <div class="suit">♠</div>
-                    <div class="bottom-right">K</div>
+        <!-- Players Section -->
+        <div class="players-container">
+            <div class="player">
+                <h3>Player 1</h3>
+                <div id="player1-cards" class="cards">
+                    <img src="ace.png" class="card-img" alt="Ace">
+                    <img src="king.png" class="card-img" alt="King">
                 </div>
-                <div class="card heart">
-                    <div class="top-left">6</div>
-                    <div class="suit">♥</div>
-                    <div class="bottom-right">6</div>
+            </div>
+            <div class="player">
+                <h3>Player 2</h3>
+                <div id="player2-cards" class="cards">
+                    <img src="seven.jpg" class="card-img" alt="Seven">
+                    <img src="cardback.png" class="card-img" alt="Card Back">
                 </div>
             </div>
         </div>
 
-        <!-- Player 1 -->
-        <div class="hand-container" id="player1-hand">
-            <h2>Player 1</h2>
-            <div class="cards">
-                <div class="card diamond">
-                    <div class="top-left">A</div>
-                    <div class="suit">♦</div>
-                    <div class="bottom-right">A</div>
-                </div>
-                <div class="card club">
-                    <div class="top-left">10</div>
-                    <div class="suit">♣</div>
-                    <div class="bottom-right">10</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Player 2 -->
-        <div class="hand-container" id="player2-hand">
-            <h2>Player 2</h2>
-            <div class="cards">
-                <div class="card heart">
-                    <div class="top-left">5</div>
-                    <div class="suit">♥</div>
-                    <div class="bottom-right">5</div>
-                </div>
-                <div class="card spade">
-                    <div class="top-left">7</div>
-                    <div class="suit">♠</div>
-                    <div class="bottom-right">7</div>
-                </div>
-            </div>
+        <!-- Betting Chips -->
+        <div class="chips">
+            <button class="chip">50</button>
+            <button class="chip">100</button>
+            <button class="chip">200</button>
         </div>
     </div>
 
-    <!-- Buttons Section -->
-    <div class="buttons-container">
-        <button class="ActionButton">Hit</button>
-        <button class="ActionButton">Stand</button>
-        <button class="ActionButton">Double Down</button>
-        <button class="ActionButton">Split</button>
+    <!-- Buttons Below the Table -->
+    <div class="buttons">
+        <button class="game-button">Hit</button>
+        <button class="game-button">Stand</button>
+        <button class="game-button">Double Down</button>
+        <button class="game-button">Split</button>
     </div>
-
-    <!-- Betting Chips -->
-    <div class="chips-container">
-        <button class="chip">$50</button>
-        <button class="chip">$100</button>
-        <button class="chip">$150</button>
-    </div>
-
 </body>
 </html>
