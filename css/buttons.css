@@ -1,0 +1,95 @@
+.button {
+    background-color: #4CAF50; /*button color*/
+    color: white; /*text color*/
+
+    border: none; /*no border*/
+    border-radius: 5px; /*rounded corners*/
+    padding: 10px 20px; /*padding for text inside*/
+    margin: 0 10px; /*spacing between each button*/
+
+    cursor: pointer; /*turn cursor to pointer on hover*/
+    transition: background-color 0.2s; /*smooth transition for hover effect*/
+}
+.button:hover {
+    background-color: #318a36; /*darker green color on hover*/
+}
+.button:active {
+    background-color: #1b5730; /* even darker green for when the button is pressed */
+}
+
+
+/*general hand styling*/
+.hand {
+    position: absolute;
+    width: 75px; /*size*/
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+/*hit hand bounce animation*/
+.hit-button:hover ~ .hit-hand { /*the ~ is to associate the hitbutton with the hit-hand*/
+    visibility: visible;
+    opacity: 1;
+    animation: bounce 0.8s ease-in-out infinite alternate;
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+/*stand hand sway animation */
+.stand-button:hover ~ .stand-hand {
+    visibility: visible;
+    opacity: 1;
+    animation: sway 1s ease-in-out infinite alternate;
+}
+@keyframes sway {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+
+/*split hand appears with no animation for now*/
+.split-button:hover ~ .split-hand {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*double x2 popup*/
+.double-down-button:hover ~ .double {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* For positioning the hands and the x2*/
+.hit-hand {
+    left: 49%;
+    top: 45%;
+}
+.stand-hand {
+    left: 49%;
+    top: 42%;
+}
+.split-hand {
+    width: 70px;
+    left: 49%;
+    top: 42%;
+}
+.double {
+    color: white;
+    font-weight: bold;
+    font-size: 20pt;
+    text-shadow: 0 0 10px white;
+
+    position: absolute;
+    left: 52.5%;
+    top: 68.5%;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
