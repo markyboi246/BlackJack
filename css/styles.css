@@ -49,7 +49,7 @@ body {
 
 /* Card Image Styling */
 .card-img {
-    width: 60px; /* Match original card size */
+    width: 80px; /* Match original card size */
     height: 120px;
     margin: 0 10px;
     border-radius: 8px;
