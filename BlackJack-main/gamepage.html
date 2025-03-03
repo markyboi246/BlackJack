@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/cardshuffle.css"> 
+    <link rel="stylesheet" href="css/cardflip.css"> 
+    <link rel="stylesheet" href="css/carddeal.css"> 
+    <link rel="stylesheet" href="css/chips.css">
+</head>
+<body>
+    <div class="table-container">
+        <!-- Dealer Section -->
+        <div class="dealer">
+            <h2>Dealer</h2>
+    
+            <!-- Dealer's Dealt Cards -->
+            <div id="dealer-cards" class="cards">
+                <div class="card card3"></div>
+                <div class="card card4"></div>
+            </div>
+    
+            <!-- Deck Area (Now Inside Dealer Section) -->
+            <div class="deck-area">
+                <div class="card-stack">
+                    <div class="card top-card"></div>
+                    <div class="card middle-card"></div>
+                    <div class="card bottom-card"></div>
+                </div>
+            </div>
+            <div class="bet-area"></div>
+        </div>
+
+    
+
+
+    
+        <!-- Players Section -->
+        <div class="players-container">
+            <div class="player">
+                <h3>Player 1</h3>
+                <div id="player1-cards" class="cards">
+                    <div class="card card1"></div>
+                    <div class="card card2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="chips">
+
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-50">
+            <div class="chip chip-red"style="left: 20%; animation-delay: 0.0s">50</div>
+        </label>
+    
+        <!-- Black Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-100">
+            <div class="chip chip-black"style="left: 30%; animation-delay: 0.2s">100</div>
+        </label>
+    
+        <!-- Blue Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-200">
+            <div class="chip chip-blue" style="left: 40%; animation-delay: 0.4s">200</div>
+        </label>
+    
+        <!-- Green Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-500">
+            <div class="chip chip-green" style="left: 50%; animation-delay: 0.6s">500</div>
+        </label>
+    
+        <!-- Yellow Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-1000">
+            <div class="chip chip-yellow" style="left: 60%; animation-delay: 0.8s">1000</div>
+        </label>
+    </div>
+    
+
+
+
+
+
+    <!-- Buttons Below the Table -->
+    <div class="buttons">
+        <button class="game-button">Hit</button>
+        <button class="game-button">Stand</button>
+        <button class="game-button">Double Down</button>
+        <button class="game-button">Split</button>
+    </div>
+</body>
+</html>

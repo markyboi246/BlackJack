@@ -1,0 +1,113 @@
+
+/* Betting Area */
+.bet-area {
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dashed white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* Chips Container */
+.chips {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual Chip Styling */
+.chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; /* default white for fallback */
+    border: 7px solid gold; /* Gold border for all chips */
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Red Chip */
+.chip-red {
+    background: linear-gradient(145deg, #ff4c4c, #ff1f1f); /* Gradient from red to darker red */
+    border: 4px solid #d80000; /* Darker red border */
+}
+
+/* Black Chip */
+.chip-black {
+    background: linear-gradient(145deg, #555555, #2f2f2f); /* Gradient from gray to black */
+    border: 4px solid #333333; /* Darker border */
+}
+
+/* Blue Chip */
+.chip-blue {
+    background: linear-gradient(145deg, #4c8cff, #0066cc); /* Gradient from light blue to dark blue */
+    border: 4px solid #0050b3; /* Darker blue border */
+}
+
+/* Green Chip */
+.chip-green {
+    background: linear-gradient(145deg, #66cc66, #339933); /* Gradient from light green to dark green */
+    border: 4px solid #288e28; /* Darker green border */
+}
+
+/* Yellow Chip */
+.chip-yellow {
+    background: linear-gradient(145deg, #ffcc33, #e6a900); /* Gradient from light yellow to gold */
+    border: 4px solid #d29b00; /* Gold border */
+}
+
+/* Hover Effect for Chips */
+.chip:hover {
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 5px 5px 10px black;
+}
+
+/* Checkboxes Hidden */
+.chip-checkbox {
+    display: none;
+}
+
+/* Move Chips to Betting Area when Clicked */
+.chip-wrapper:has(.chip-checkbox:checked) .chip {
+    transform: translateY(-180px); /* Move chip upward onto table */
+    box-shadow: none;
+}
+
+/* Chip Animation for Falling Chips */
+.chip-anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 7px solid gold;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    animation: chip-fall 1s ease-out forwards;
+    opacity: 0;
+    transition: transform 0.2s;
+    z-index: 2;
+}
+
+/* Keyframes for Falling Animation */
+@keyframes chip-fall {
+    0% {
+        transform: scale(2) translate(-200px, -200px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+}
