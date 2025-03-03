@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/cardflip.css"> 
     <link rel="stylesheet" href="css/carddeal.css"> 
     <link rel="stylesheet" href="css/chips.css">
+    <link rel="stylesheet" href="css/buttons.css">
 </head>
 <body>
     <div class="table-container">
@@ -89,10 +90,28 @@
 
     <!-- Buttons Below the Table -->
     <div class="buttons">
-        <button class="game-button">Hit</button>
-        <button class="game-button">Stand</button>
-        <button class="game-button">Double Down</button>
-        <button class="game-button">Split</button>
+        <label class="game-button">
+            <input type="radio" name="action" class="hit-button" id="hit" onclick="updateAction('Hit')">
+            Hit
+        </label>
+        <label class="game-button">
+            <input type="radio" name="action" class="stand-button" id="stand" onclick="updateAction('Stand')">
+            Stand
+        </label>
+        <label class="game-button">
+            <input type="radio" name="action" class="double-button" id="double" onclick="updateAction('Double Down')">
+            Double Down
+        </label>
+        <label class="game-button">
+            <input type="radio" name="action" class="split-button" id="split" onclick="updateAction('Split')">
+            Split
+        </label>
     </div>
+    
+    <!-- Action Indicator -->
+    <div id="action-indicator">
+        <p id="selected-action">Choose an action</p>
+    </div>
+    
 </body>
 </html>
