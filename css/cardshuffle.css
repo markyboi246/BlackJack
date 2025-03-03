@@ -2,49 +2,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    padding: 1px;
-    height: 200px;
-    width: 150px;
-}
-
-.card-stack {
-    position: absolute;
-    width: 150px;
+    position: relative; /* Change absolute to relative */
+    padding: 20px;
     height: 140px;
+    width: 200px;
+}
+   
+.card-stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .card {
     position: absolute;
-    width: 50px;
-    height: 100px;
-    
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     background-size: cover;
-    transition: shuffle 0.5s;
+    transition: transform 0.5s, z-index 0s 0.5s;
 }
+.card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+
+.top-card, .middle-card, .bottom-card {
+    background-image: url("../images/cardback.jpeg"); 
+    background-size: 100% 100%;  /* Ensures the image fills the card */
+}
+
 
 .top-card {
     z-index: 3;
-    top: -5px;
-    left: -4px;
-    background-image: url("../images/cardback.png");
-    animation: shuffle 4s infinite ease-in-out;
+    animation: shuffle 4s forwards; /* Moves the card forward for 4 second for a shuffling effect*/
 }
 
 .middle-card {
     z-index: 2;
-    top: -150px;
-    left: -4px;
-    background-image: url("../images/cardback.png");
 }
 
 .bottom-card {
     z-index: 1;
-    top: -290px;
-    left: -4px;
-    background-image: url("../images/cardback.png");
 }
+
+/* Keyframes for shuffle animation */
 
 @keyframes shuffle {
     /* Defines the shuffle animation for the top card */
