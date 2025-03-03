@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cardshuffle.css"> 
     <link rel="stylesheet" href="css/cardflip.css"> 
     <link rel="stylesheet" href="css/carddeal.css"> 
+    <link rel="stylesheet" href="css/chips.css">
 </head>
 <body>
     <div class="table-container">
@@ -29,7 +30,12 @@
                     <div class="card bottom-card"></div>
                 </div>
             </div>
+            <div class="bet-area"></div>
         </div>
+
+    
+
+
     
         <!-- Players Section -->
         <div class="players-container">
@@ -44,14 +50,42 @@
     </div>
     
     
-        <!-- Betting Chips -->
-        <div class="chips">
-            <button class="chip">50</button>
-            <button class="chip">100</button>
-            <button class="chip">200</button>
-            <button class="chip">1000</button>
-        </div>
+    <div class="chips">
+
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-50">
+            <div class="chip chip-red"style="left: 20%; animation-delay: 0.0s">50</div>
+        </label>
+    
+        <!-- Black Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-100">
+            <div class="chip chip-black"style="left: 30%; animation-delay: 0.2s">100</div>
+        </label>
+    
+        <!-- Blue Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-200">
+            <div class="chip chip-blue" style="left: 40%; animation-delay: 0.4s">200</div>
+        </label>
+    
+        <!-- Green Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-500">
+            <div class="chip chip-green" style="left: 50%; animation-delay: 0.6s">500</div>
+        </label>
+    
+        <!-- Yellow Chip -->
+        <label class="chip-wrapper">
+            <input type="checkbox" class="chip-checkbox" id="chip-1000">
+            <div class="chip chip-yellow" style="left: 60%; animation-delay: 0.8s">1000</div>
+        </label>
     </div>
+    
+
+
+
+
 
     <!-- Buttons Below the Table -->
     <div class="buttons">
