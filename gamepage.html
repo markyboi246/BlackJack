@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack Game</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Linking the external CSS file -->
-    <link rel="stylesheet" href="css/cardshuffle.css"> <!-- Linking the Card shuffling CSS file -->
-    <link rel="stylesheet" href="css/cardflip.css"> <!-- Linking the Card Dealing CSS file -->
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/cardshuffle.css"> 
+    <link rel="stylesheet" href="css/cardflip.css"> 
+    <link rel="stylesheet" href="css/carddeal.css"> 
 </head>
 <body>
     <div class="table-container">
         <!-- Dealer Section -->
         <div class="dealer">
             <h2>Dealer</h2>
+    
+            <!-- Dealer's Dealt Cards -->
+            <div id="dealer-cards" class="cards">
+                <div class="card card3"></div>
+                <div class="card card4"></div>
+            </div>
+    
+            <!-- Deck Area (Now Inside Dealer Section) -->
             <div class="deck-area">
                 <div class="card-stack">
                     <div class="card top-card"></div>
@@ -21,32 +30,20 @@
                 </div>
             </div>
         </div>
-        
-
+    
         <!-- Players Section -->
         <div class="players-container">
             <div class="player">
                 <h3>Player 1</h3>
                 <div id="player1-cards" class="cards">
-                    <!-- Card 1: Ace -->
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-front" style="background-image: url('images/ace.jpeg');"></div>
-                            <div class="card-back" style="background-image: url('images/cardback.png');"></div>
-                        </div>
-                    </div>
-                    <!-- Card 2: King -->
-                    <div class="card-container">
-                        <div class="card">
-                            <div class="card-front" style="background-image: url('images/king.png');"></div>
-                            <div class="card-back" style="background-image: url('images/cardback.png');"></div>
-                        </div>
-                    </div>
+                    <div class="card card1"></div>
+                    <div class="card card2"></div>
                 </div>
             </div>
         </div>
-        
-
+    </div>
+    
+    
         <!-- Betting Chips -->
         <div class="chips">
             <button class="chip">50</button>
