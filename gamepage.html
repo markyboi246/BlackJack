@@ -19,19 +19,23 @@
     
             <!-- Dealer's Dealt Cards -->
             <div id="dealer-cards" class="cards">
+                <!-- Dealer's first card (Face-up, visible from start) -->
                 <div class="card">
                     <div class="card-inner">
-                        <div class="card-front card3"></div>
-                        <div class="card-back"></div>
+                        <div class="card-front card3"></div> <!-- King card -->
+                        <div class="card-back"></div>  <!-- Back of card -->
                     </div>
                 </div>
+                
+                <!-- Dealer's second card (Starts face-down, flips to Ace) -->
                 <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front card4"></div>
-                        <div class="card-back"></div>
+                    <div class="card-inner face-down"> <!-- Starts face-down -->
+                        <div class="card-front card2"></div> <!-- Ace card -->
+                        <div class="card-back"></div> <!-- Back of card (visible first) -->
                     </div>
                 </div>
             </div>
+            
     
             <!-- Deck Area (Now Inside Dealer Section) -->
             <div class="deck-area">
