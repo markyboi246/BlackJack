@@ -41,6 +41,16 @@
     border-radius: 10px;
 }
 
+/* Make sure the second dealer card starts face-down */
+.face-down {
+    transform: rotateY(180deg); /* Ensures it starts face-down */
+}
+
+/* Allow flipping when hovered */
+.card:hover .card-inner {
+    transform: rotateY(0deg); /* Flips back to reveal Ace */
+}
+
 /* Back of the card */
 .card-back {
     position: absolute;
@@ -53,6 +63,17 @@
     border-radius: 10px;
     transform: rotateY(180deg); /* Rotate the back of the card */
 }
+/* Ensure Player 1's cards start face-up */
+#player1-cards .card .card-inner {
+    transform: rotateY(0deg); /* Ensures cards appear face-up initially */
+}
+
+/* Flip Player 1's cards when hovered */
+#player1-cards .card:hover .card-inner {
+    transform: rotateY(180deg); /* Flips when hovered */
+}
+
+
 
 /* Specific card images for front faces */
 .card1 .card-front {
