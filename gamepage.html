@@ -19,74 +19,95 @@
     
             <!-- Dealer's Dealt Cards -->
             <div id="dealer-cards" class="cards">
-                <div class="card card3"></div>
-                <div class="card card4"></div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front card3"></div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front card4"></div>
+                        <div class="card-back"></div>
+                    </div>
+                </div>
             </div>
     
             <!-- Deck Area (Now Inside Dealer Section) -->
             <div class="deck-area">
                 <div class="card-stack">
-                    <div class="card top-card"></div>
-                    <div class="card middle-card"></div>
-                    <div class="card bottom-card"></div>
+                    <div class="card top-card">
+                        <div class="card-inner">
+                            <div class="card-front"></div>
+                            <div class="card-back"></div>
+                        </div>
+                    </div>
+                    <div class="card middle-card">
+                        <div class="card-inner">
+                            <div class="card-front"></div>
+                            <div class="card-back"></div>
+                        </div>
+                    </div>
+                    <div class="card bottom-card">
+                        <div class="card-inner">
+                            <div class="card-front"></div>
+                            <div class="card-back"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="bet-area"></div>
         </div>
 
-    
-
-
-    
         <!-- Players Section -->
         <div class="players-container">
             <div class="player">
                 <h3>Player 1</h3>
                 <div id="player1-cards" class="cards">
-                    <div class="card card1"></div>
-                    <div class="card card2"></div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front card1"></div>
+                            <div class="card-back"></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front card2"></div>
+                            <div class="card-back"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    
-    <div class="chips">
 
+    <!-- Chips Area -->
+    <div class="chips">
         <label class="chip-wrapper">
             <input type="checkbox" class="chip-checkbox" id="chip-50">
-            <div class="chip chip-red"style="left: 20%; animation-delay: 0.0s">50</div>
+            <div class="chip chip-red" style="left: 20%; animation-delay: 0.0s">50</div>
         </label>
     
-        <!-- Black Chip -->
         <label class="chip-wrapper">
             <input type="checkbox" class="chip-checkbox" id="chip-100">
-            <div class="chip chip-black"style="left: 30%; animation-delay: 0.2s">100</div>
+            <div class="chip chip-black" style="left: 30%; animation-delay: 0.2s">100</div>
         </label>
     
-        <!-- Blue Chip -->
         <label class="chip-wrapper">
             <input type="checkbox" class="chip-checkbox" id="chip-200">
             <div class="chip chip-blue" style="left: 40%; animation-delay: 0.4s">200</div>
         </label>
     
-        <!-- Green Chip -->
         <label class="chip-wrapper">
             <input type="checkbox" class="chip-checkbox" id="chip-500">
             <div class="chip chip-green" style="left: 50%; animation-delay: 0.6s">500</div>
         </label>
     
-        <!-- Yellow Chip -->
         <label class="chip-wrapper">
             <input type="checkbox" class="chip-checkbox" id="chip-1000">
             <div class="chip chip-yellow" style="left: 60%; animation-delay: 0.8s">1000</div>
         </label>
     </div>
-    
-
-
-
-
 
     <!-- Buttons Below the Table -->
     <div class="buttons">
@@ -112,6 +133,5 @@
     <div id="action-indicator">
         <p id="selected-action">Choose an action</p>
     </div>
-    
 </body>
 </html>
